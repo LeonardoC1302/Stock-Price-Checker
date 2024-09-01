@@ -57,6 +57,8 @@ module.exports = function (app) {
       }
 
       const oneStockData = { stock: symbol, likes: like ? [req.ip] : [] }; 
+      console.log("One Stock Data", oneStockData);
+
       res.json({
         stockData: {
           stock: symbol,
